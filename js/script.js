@@ -32,7 +32,7 @@ let lip = document.getElementById('nav-portfolio');
 let liv = document.getElementById('nav-values');
 
 function Border(event) {
-    event.target.style.border = 'solid';
+    event.target.style.border = '5px solid white';
 };
 
 function unBorder(event) {
