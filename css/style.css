@@ -1,36 +1,39 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Museo Sans 700",sans-serif;
+    font-family: "Museo Sans 300",sans-serif;
+    font-weight: 400;
     background: #EEEEEE;
 }
 
+header {
+    display: inline-block;
+    position: fixed;
+    background-color: #281e8a;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+}
+
 nav {
-  float: right;
-}
-
-.navbar {
-  margin-top: 7%;
-  margin-right: 30px;
-}
-
-.navbar li {
+  position: absolute;
+  right: 10px;
+  top: 25px;
   display: inline-block;
-  height: 70px;
-  width: 200px;
-  text-align: center;
-  margin: auto 20px;
 }
 
-.navbar li a {
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 28px;
-  border: 5px hidden red;
-  padding: 15px;
+main {
+  position: relative;
+  top: 80px;
+}
+
+footer {
+color: #ababb0 ;
+text-align: center
 }
 
 a {
@@ -41,7 +44,8 @@ p, h1, h2 {
     padding-left: 40px;
 }
 h1, h2 {
-    color: #110d3b;
+    padding-left: 40px;
+    color: #281e8a;
 }
 h1 {
     font-size: 46px;
@@ -59,32 +63,53 @@ h4 {
     color: #545454;
     font-style: italic;
 }
-.company-name {
-    margin-top: 3%;
-    display: inline-block;
+
+header h1 {
     text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
     color: white;
     font-size: 36px;
     cursor: pointer;
 }
+
+nav li {
+  display: inline-block;
+  height: 70px;
+  width: 200px;
+  text-align: center;
+  margin: auto 20px;
+}
+
+nav li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  border: 5px hidden red;
+  padding: 15px;
+}
+
 .moto {
+    width:100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://static.vecteezy.com/system/resources/previews/000/830/014/original/futuristic-banner-background-with-wireframe-terrain-vector.jpg');
+    background-position:center top;
+    background-size: 100%;
+    height:650px;
+}
+
+.moto h1, h2 {
+    position: relative;
+    top: 275px;
     color: white;
-    line-height: 10px;
 }
-h1.moto {
-    text-transform: uppercase;
-    padding-top: 200px;
-}
-h2.moto {
+
+.moto h2 {
     font-style: italic;
 }
 
-.bckground {
-    display:table;
-    width:100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('http://c.files.bbci.co.uk/14202/production/_108243428_gettyimages-871148930.jpg');
-    background-position:center top;
-    height:650px;
+.founders {
+  position: relative;
+  top: 40px;
 }
 
 .profile {
@@ -96,14 +121,10 @@ h2.moto {
     border-color: #2d21a3;
     cursor: pointer;
 }
+
 .image {
     height:100px;
     padding-left: 50px;
-}
-
-footer {
-color: #ababb0 ;
-text-align: center
 }
 
 #profiles {
